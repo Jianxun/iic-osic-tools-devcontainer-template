@@ -62,4 +62,4 @@ The dev container comes with a suite of open-source EDA tools, including (but no
 
 ## License
 
-This devcontainer template setup is provided under the Apache License 2.0. The tools included within the Docker image `hpretl/iic-osic-tools:latest` are subject to their own respective licenses. 
+This devcontainer template setup is provided under the MIT License. The tools included within the Docker image `hpretl/iic-osic-tools:latest` are subject to their own respective licenses. 
