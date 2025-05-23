@@ -2,7 +2,7 @@
 
 This repository provides a template to quickly set up a development environment for the [IIC OSIC Tools](https://github.com/iic-jku/iic-osic-tools) using VS Code Dev Containers.
 
-It provides access to a pre-configured Docker container with common open-source EDA (Electronic Design Automation) tools, enabling a seamless workflow where an AI assistant (like GitHub Copilot or Cursor's AI) can directly create scripts, invoke EDA toolchains, and interact with your designs within the containerized environment.
+It provides access to a pre-configured Docker container with common open-source EDA (Electronic Design Automation) tools, enabling a seamless workflow where an AI assistant (like GitHub Copilot) can directly create scripts, invoke EDA toolchains, and interact with your designs within the containerized environment.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ It provides access to a pre-configured Docker container with common open-source 
 
 1.  **Clone this repository:**
     ```bash
-    git clone [URL_OF_THIS_TEMPLATE_REPO] my-eda-project
+    git clone https://github.com/Jianxun/iic-osic-tools-devcontainer-template my-eda-project
     cd my-eda-project
     ```
 2.  **Designs Directory:**
@@ -43,10 +43,12 @@ The dev container comes with a suite of open-source EDA tools, including (but no
 
 *   **Terminal:** New terminals opened in VS Code will start in the `/foss/designs` directory within the container.
 *   **Web VNC (noVNC):**
+    *   **Note:** There are known issues with VNC port forwarding in some environments. X11 forwarding is the recommended method for GUI applications.
     *   Access via: `http://localhost:8080/` (if host port 8080 is free).
     *   The VNC password is `abc123` (as set in `devcontainer.json`).
     *   If port 8080 is busy on your host, VS Code will forward to a different host port. Check the "Ports" tab in VS Code for the correct URL.
 *   **Direct VNC Client:**
+    *   **Note:** There are known issues with VNC port forwarding in some environments. X11 forwarding is the recommended method for GUI applications.
     *   Connect to: `localhost:5901` (if host port 5901 is free).
     *   Password: `abc123`.
     *   If port 5901 is busy on your host, VS Code will forward to a different host port. Check the "Ports" tab for the correct host port to use.
