@@ -1,0 +1,24 @@
+** ngspice-44.2 : Circuit level simulation program
+** Compiled with KLU Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2024, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Tue Mar 18 10:38:27 UTC 2025
+******
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: ** sch_path: /foss/designs/analog_library/bias_1.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Error: unknown subckt: x1.xm1 i_out i_ref vss x1.sky130_fd_pr__nfet_01v8 
+    in line no. 35 from file /headless/.xschem/simulations/bias_1.spice
+    Simulation interrupted due to error!
+
+ngspice 1 -> 

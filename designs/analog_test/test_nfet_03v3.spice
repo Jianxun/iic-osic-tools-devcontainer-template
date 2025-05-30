@@ -1,0 +1,30 @@
+** sch_path: /foss/designs/analog_test/test_nfet_03v3.sch
+**.subckt test_nfet_03v3
+XM1 D G S B nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+**** begin user architecture code
+
+*.include /foss/pdks/models/ngspice/design.ngspice
+.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+.param VDD = 3.3
+
+vg g 0 1.2
+vd d 0 {VDD}
+vs s 0 0
+vb b 0 0
+
+.control
+save all
+* step param {VDD} 0 3.3 0.01
+op
+dc vd 0 3.3 0.01
+
+write test_nfet_03v3.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.end

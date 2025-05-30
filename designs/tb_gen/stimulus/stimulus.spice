@@ -1,0 +1,8 @@
+
+V1 {net} GND DC {Vdc}
+V2 {net} GND AC {Mag} {Phase}
+V3 {net} GND PULSE(V1 V2 {Tdelay} {Trise} {Tfall} {Ton} {Tperiod} {Ncycles})
+V4 {net} GND SIN({Voffset} {Vamp} {Freq} {Td} {Theta} {Damp})
+V5 {net} GND EXP({V1} {V2} {T1} {Tau1} {T2} {Tau2})
+V6 {net} GND PWL(t1 v1 t2 v2 t3 v3 …)
+V6 {net} GND PWL FILE="{file.pwl}"

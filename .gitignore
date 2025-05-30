@@ -18,3 +18,5 @@ dist/
 
 # Local user credentials or sensitive files (example)
 # eda_user_credentials*.json 
+.venv/
+venv/

@@ -1,0 +1,4 @@
+*.include /foss/pdks/models/ngspice/design.ngspice
+.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
