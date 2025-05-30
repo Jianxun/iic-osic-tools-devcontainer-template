@@ -1,0 +1,12 @@
+stimulus:
+  - name: vg
+    type: vdc
+    value: 1.8
+    plus: G
+    minus: GND
+  - name: vd
+    type: vdc
+    value: 1.8
+    plus: G
+    minus: GND
+

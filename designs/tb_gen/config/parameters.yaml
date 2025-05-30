@@ -1,0 +1,35 @@
+parameters:
+  Vg: 1.8
+  Vd: 1.8
+
+analysis:
+  op:
+    # Stimulus files
+    stimulus:
+      - vdc_drain.spice
+      - vdc_gate.spice
+    # ngspice control files
+    control: |
+      .op
+      save all
+      show all
+  
+  dc:
+    # Stimulus files
+    stimulus:
+      - vdc_drain.spice
+      - vdc_gate.spice
+    # ngspice control files
+    control:
+      op: {}
+      sweep:
+        - name: vd
+          type: linear
+          start: 0
+          stop: 3.3
+          by: 0.01
+    # ngspice output files
+    output:
+      - vd.raw
+
+
